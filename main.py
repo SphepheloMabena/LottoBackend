@@ -1,7 +1,7 @@
 from fastapi import FastAPI, status
+from auth.Authentification import router
+from lottery import Lottery
 
 app = FastAPI()
-
-@app.get("/", status_code=status.HTTP_200_OK)
-async def greeting():
-    return {'message': 'Lotto App'}
+app.include_router(router)
+app.include_router(Lottery.router)
