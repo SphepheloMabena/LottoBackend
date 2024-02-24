@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72069aee-70b1-4492-9c60-ee06f35569fb" name="Changes" comment="User Model">
-      <change afterPath="$PROJECT_DIR$/db/Tables/DailyLotto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/Tables/Powerball.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/LottoModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+    <list default="true" id="72069aee-70b1-4492-9c60-ee06f35569fb" name="Changes" comment="Updating requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/Authentification.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/Authentification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/Tables/Users.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/Tables/Users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/Lottery.py" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/Lottery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +127,71 @@
       <option name="project" value="LOCAL" />
       <updated>1708266726361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AUthentification">
+      <option name="closed" value="true" />
+      <created>1708769810326</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708769810326</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created Database Tables">
+      <option name="closed" value="true" />
+      <created>1708769896223</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708769896223</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Models">
+      <option name="closed" value="true" />
+      <created>1708769920851</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708769920851</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Created Users Table">
+      <option name="closed" value="true" />
+      <created>1708769940211</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708769940211</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Making Progress">
+      <option name="closed" value="true" />
+      <created>1708769956128</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708769956128</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Created Powerball Endpoints">
+      <option name="closed" value="true" />
+      <created>1708772957598</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708772957598</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated Model for Production">
+      <option name="closed" value="true" />
+      <created>1708773338754</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708773338754</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updating requirements.txt">
+      <option name="closed" value="true" />
+      <created>1708773447185</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708773447185</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +212,14 @@
     <MESSAGE value="Created SQL Lite Database" />
     <MESSAGE value="Created User Table" />
     <MESSAGE value="User Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Model" />
+    <MESSAGE value="AUthentification" />
+    <MESSAGE value="Created Database Tables" />
+    <MESSAGE value="Models" />
+    <MESSAGE value="Created Users Table" />
+    <MESSAGE value="Making Progress" />
+    <MESSAGE value="Created Powerball Endpoints" />
+    <MESSAGE value="Updated Model for Production" />
+    <MESSAGE value="Updating requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating requirements.txt" />
   </component>
 </project>

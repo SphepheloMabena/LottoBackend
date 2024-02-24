@@ -80,7 +80,7 @@ async def create_user(db: db_dependency, user: UserModel):
     return {"message": "User added successfully"}
 
 
-@router.post("/token", response_model=Token)
+@router.post("/token")
 async def Login_for_Access_token(form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
                                  db: db_dependency):
     user = authenticate_user(form_data.username, form_data.password, db)
