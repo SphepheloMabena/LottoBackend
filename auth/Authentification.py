@@ -67,7 +67,7 @@ async def get_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
         raise HTTPException(detail="Could not validate user", status_code=status.HTTP_401_UNAUTHORIZED)
 
 
-@router.post("/auth", status_code=status.HTTP_201_CREATED)
+# @router.post("/auth", status_code=status.HTTP_201_CREATED)
 async def create_user(db: db_dependency, user: UserModel):
     user_model = User(
         email=user.email,
