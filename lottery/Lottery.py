@@ -60,3 +60,22 @@ async def powerball(db: db_dependency, user: user_dependency, model: LottoModel)
 
     finally:
         var = {"user": "users"}
+
+
+@router.get("/powerball", status_code=status.HTTP_200_OK)
+async def getPowerbal(db: db_dependency, user: user_dependency):
+    powerballResults = []
+    try:
+        username = user.get("username")
+        if username != "":
+            result = db.query(Powerball.Powerball).all()
+            for item in result:
+                winning_numbers = [item.winOne, item.winTwo, item.winThree, item.winFour, item.winFive, item.powerball]
+                data = {
+                    "date": item.date,
+                    "numbers": winning_numbers
+                }
+                powerballResults.append(data)
+
+    finally:
+        return powerballResults
