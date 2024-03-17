@@ -50,7 +50,7 @@ async def powerball(db: db_dependency, user: user_dependency, model: LottoModel)
                 winOne=model.winOne,
                 winTwo=model.winTwo,
                 winThree=model.winThree,
-                winFour=model.winThree,
+                winFour=model.winFour,
                 winFive=model.winFive,
                 powerball=model.powerball
             )
