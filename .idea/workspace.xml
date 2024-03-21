@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72069aee-70b1-4492-9c60-ee06f35569fb" name="Changes" comment="Updating requirements.txt">
+    <list default="true" id="72069aee-70b1-4492-9c60-ee06f35569fb" name="Changes" comment="Updating SQLALCHEMY">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,31 @@
       <option name="project" value="LOCAL" />
       <updated>1708773447185</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixing token error">
+      <option name="closed" value="true" />
+      <created>1708795751120</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708795751120</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixing Bug Related to Uploading Powerball Results">
+      <option name="closed" value="true" />
+      <created>1710669145012</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710669145012</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updating SQLALCHEMY">
+      <option name="closed" value="true" />
+      <created>1711001950402</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711001950402</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +245,9 @@
     <MESSAGE value="Created Powerball Endpoints" />
     <MESSAGE value="Updated Model for Production" />
     <MESSAGE value="Updating requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating requirements.txt" />
+    <MESSAGE value="Fixing token error" />
+    <MESSAGE value="Fixing Bug Related to Uploading Powerball Results" />
+    <MESSAGE value="Updating SQLALCHEMY" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating SQLALCHEMY" />
   </component>
 </project>
