@@ -12,6 +12,8 @@ from db.Tables import Powerball
 from db.Database import engine
 from models.LottoModel import LottoModel
 from db.Tables import Powerball
+from statistics import multimode, mode
+import random
 
 router = APIRouter()
 
@@ -79,3 +81,49 @@ async def getPowerbal(db: db_dependency, user: user_dependency):
 
     finally:
         return powerballResults
+
+
+@router.get("/predict_powerball_numbers", status_code=status.HTTP_200_OK)
+async def predict(db: db_dependency, user: user_dependency):
+    winningNumbers = []
+    predict = []
+    powerballs = []
+
+    try:
+        username = user.get("username")
+        if username != "":
+            result = db.query(Powerball.Powerball).all()
+            for item in result:
+                winningNumbers.append(item.winOne)
+                winningNumbers.append(item.winTwo)
+                winningNumbers.append(item.winThree)
+                winningNumbers.append(item.winFour)
+                winningNumbers.append(item.winFive)
+                powerballs.append(item.powerball)
+
+    finally:
+        popular = multimode(winningNumbers)
+        dummy_popular = popular
+        while len(popular) < 5:
+            for number in dummy_popular:
+                winningNumbers.remove(number)
+                dummy_popular.remove(number)
+            second_popular = multimode(winningNumbers)
+            popular += second_popular
+            dummy_popular = second_popular
+
+        powerball_num = multimode(powerballs)
+        dummy_powerball_num = powerball_num
+        while len(powerball_num) < 3:
+            for number in dummy_powerball_num:
+                dummy_powerball_num.remove(number)
+                powerballs.remove(number)
+            second_popular_powerball = multimode(powerballs)
+            powerball_num += second_popular_powerball
+
+            dummy_powerball_num = second_popular_powerball
+
+        predict += popular
+        predict.append(random.choice(powerball_num))
+        return {"numbers": predict
+                }
